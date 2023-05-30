@@ -1,21 +1,53 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Playlist Webpage</title>
+  <style>
+    body {
+      background-color: #cccccc;
+    }
+    
+    .player_one {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    
+    .player_one ul {
+      list-style-type: none;
+    }
+    
+    .player_one li {
+      margin-bottom: 5px;
+    }
+    
+    .player_one a {
+      text-decoration: none;
+    }
+    
+    .player_two {
+      margin-top: 20px;
+    }
+    
+    .mp3_player {
+      margin-top: 20px;
+    }
+  </style>
 </head>
-
 <body>
-	<h1>My Playlist</h1>
-	<div class="player_one">
-    <a href="https://www.youtube.com/watch?v=kd-6aw99DpA" target="_blank">Song 1</a>
-    <a href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 2</a>
-    <a href="https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank">Song 3</a>
-    <a href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank">Song 4</a>
-    <a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a>
-  </div>
+  <h1>My Playlist</h1>
   
+  <div class="player_one">
+    
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=kd-6aw99DpA" target="_blank">Song 1</a></li>
+      <li><a href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 2</a></li>
+      <li><a href="https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank">Song 3</a></li>
+      <li><a href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank">Song 4</a></li>
+      <li><a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a></li>
+    </ul>
+  </div>
+  <h2>Now Playing...</h2>
   <div class="player_two">
     <video controls>
       <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
@@ -29,10 +61,5 @@
       Your browser does not support the audio tag.
     </audio>
   </div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
 </body>
-
 </html>
