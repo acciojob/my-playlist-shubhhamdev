@@ -1,1 +1,21 @@
 /*  your css code here. If applicable */
+body {
+      background-color: #cccccc;
+    }
+    
+    .player_one {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .player_one a {
+      margin-bottom: 10px;
+    }
+    
+    .player_two video {
+      width: 400px;
+    }
+    
+    .mp3_player audio {
+      width: 300px;
+    }
